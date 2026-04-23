@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-JWT-Extended
+Flask-Mail
+Flask-Migrate
+Flask-Cors
+python-dotenv
+passlib[bcrypt]
+reportlab
+razorpay
