@@ -35,10 +35,10 @@ def generate_certificate(user_name: str, case_name: str) -> tuple[str, str]:
 
     current_date = datetime.now(timezone.utc).strftime("%d %b %Y")
 
-    draw.text((475, 290), user_name, font=font_large, fill=name_color, anchor="mm")
-    draw.text((475, 410), case_name, font=font_large, fill=name_color, anchor="mm")
+    draw.text((475, 260), user_name, font=font_large, fill=name_color, anchor="mm")
+    draw.text((475, 360), case_name, font=font_large, fill=name_color, anchor="mm")
     draw.text((505, 500), verification_code, font=font_medium, fill=code_color, anchor="mm")
-    draw.text((308, 545), current_date, font=font_small, fill=date_color, anchor="mm")
+    draw.text((308, 530), current_date, font=font_small, fill=date_color, anchor="mm")
 
     img.save(output_path, "PDF", resolution=100.0)
 
